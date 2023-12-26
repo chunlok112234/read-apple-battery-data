@@ -58,7 +58,7 @@ for filename in filename_ls:
 # print(date_list,cycle_list, health_list )
             
 
-fig, ax1 = plt.subplots()
+fig, ax1 = plt.subplots(figsize=(10, 6))
 ax2 = ax1.twinx()
 
 ax1.plot(date_list, cycle_list, 'g', marker='s')
@@ -70,3 +70,4 @@ ax2.set_ylabel('health (%)', color='b')
 
 fig.gca().set_aspect(2)
 plt.show()
+plt.savefig("dest.jpg")
